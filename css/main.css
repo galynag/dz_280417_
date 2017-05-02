@@ -175,6 +175,14 @@ button img {
   top: 83px;
   z-index: 99;
 }
+img.slider-dots1, img.slider-dots2 {
+  left: 50%;
+  top: 187px;
+}
+img.slider-dots1 {
+  left: 50%;
+transform: translate(19px);
+}
 img.iconleft-slider {
   left: 23px;
 }
@@ -205,7 +213,7 @@ img.iconlright-slider {
   height: 42px;
   font-size: 24px;
   padding-top: 10px;
-  margin-left: 0 10px;
+  margin-left: 10px;
     /*position: absolute;
     top: 0;
     left: 50%;
@@ -244,7 +252,7 @@ nav.top li.col2:last-child {
   text-align: center;
 }
 nav.top input {
-  width: 194px;
+  width: 184px;
   border: none;
   background-color: #293449;
   float: left;
@@ -526,6 +534,7 @@ section.promo {
   background: #ee3643;
   text-align: center;
 }
+
 #logo-bottom {
   width: 220px;
   height: 64px;
