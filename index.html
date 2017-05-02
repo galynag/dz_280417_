@@ -9,11 +9,13 @@
   <body>
         <div class="line-top">
           <nav class="top">
-              <img id="logo" src="img/logo.png" alt="">
+            <div id="logo-top" class="logo">
+              техномарт
+            </div>
             <ul>
               <li><img src="img/icon_search.png" alt="">Поиск:</li> <input type="search" id="search" class="search" accesskey="f">
               <li class="col2 row42"><img class=search src="img/icon_bookmark.png" alt="">Закладки:</li>
-              <li class="col2 row42"<img src="img/icon_basket.png" alt="">Корзина:</li>
+              <li class="col2 row42"><img src="img/icon_basket.png" alt="">Корзина:</li>
               <li class="col2 row42"><div>Оформить заказ:</div></li>
             </ul>
           </nav>
@@ -21,32 +23,29 @@
     <div class="container">
 
     <header>
-      <div class=>
-        <h1 class="header col4 row160">
-          <p>Интернет-магазин</p>
-          <p>строительных материалов</p>
-          <p>и инструментов для ремонта</p></h1>
-        <address class="header col4 row160">
-          <div>
-            <a  class="tel" href="tel:+7 (812) 555-05-55"><img src="img/icon_phone.png" alt="">+7 (812) 555-05-55</a>
-          </div>
+      <h1 class="header col4 row160">
+      <p>Интернет-магазин</p>
+      <p>строительных материалов</p>
+      <p>и инструментов для ремонта</p></h1>
+      <address class="header col4 row160">
+        <div>
+          <a  class="tel" href="tel:+7 (812) 555-05-55"><img src="img/icon_phone.png" alt="">+7 (812) 555-05-55</a>
+        </div>
           г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8
-        </address>
-        <button class="header col2 row160"><img src="img/Arrow_comein.png" alt="">Войти</button>
-        <button class="header col2 row160">Регистрация</button>
-        <nav class="top2">
-          <ul>
-            <li class=''>главная</li>
-            <li class=''>компания</li>
-            <li class=''>каталог</li>
-            <li class=''>новости</li>
-            <li class=''>спецпредложение</li>
-            <li class=''>доставка</li>
-            <li class=''>контакты</li>
-          </ul>
-        </nav>
-      </div>
-
+      </address>
+      <button class="header col2 row160"><img src="img/Arrow_comein.png" alt="">Войти</button>
+      <button class="header col2 row160">Регистрация</button>
+      <nav class="top2">
+        <ul>
+          <li class=''>главная</li>
+          <li class=''>компания</li>
+          <li class=''>каталог</li>
+          <li class=''>новости</li>
+          <li class=''>спецпредложение</li>
+          <li class=''>доставка</li>
+          <li class=''>контакты</li>
+        </ul>
+      </nav>
     </header>
 
     <section class="promo">
@@ -74,12 +73,12 @@
         <div id="slider1">
           <h2>перфораторы</h2>
           <span>Настоящие мужские игрушки</span>
-          <button>открыть каталог</button>
+          <button class="btn">открыть каталог</button>
         </div>
         <div id="slider2">
           <h2>дрели</h2>
           <span>Соседям на радость!</span>
-          <button>открыть каталог</button>
+          <button class="btn">открыть каталог</button>
         </div>
         </div>
       </div>
@@ -96,10 +95,10 @@
 
     </section>
 
-    <div>
+    <!-- <div> -->
       <div class="pop">
         <span>популярные товары:</span>
-        <button>все популярные товары</button>
+        <button class="btn">все популярные товары</button>
       </div>
       <div id="item1" class="item">
         <img src="img/BFG9000.png" alt="BFG9000">
@@ -141,11 +140,11 @@
         </div>
         <div class="new"></div>
       </div>
-    </div>
+    <!-- </div> -->
     <div class="vendors">
       <div class="pop">
         <span>популярные производители:</span>
-        <button>все производители</button>
+        <button class="btn">все производители</button>
       </div>
       <div class="col3 row143">
         <img src="img/bosch.png" alt="">
@@ -180,20 +179,23 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
           <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-        <div class="btns-deliveri">
-            <div class="white">доставка</div>
-            <div class="dark">гарантия</div>
-            <div class="dark">кредит</div>
-         </div>
-         <div class="deliveri">
-         <h4>доставка</h4>
-         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-         <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+        <div class="overflow-deliveri">
+          <div class="btns-deliveri">
+              <button class="white">доставка</button>
+              <button class="dark">гарантия</button>
+              <button class="dark">кредит</button>
+           </div>
        </div>
+           <div class="deliveri">
+           <h4>доставка</h4>
+           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+           <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+           </div>
+
      </div>
     </section>
-    <footer>
-      <div class="about-company">
+    <div class="company-contacts">
+      <div class="about-company col8">
         <h3>компания "техномарт"</h3>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастрабайтерах.</p>
         <p>Мы можем доставить ваш товар в самый отдаленные точки Росси!</p>
@@ -203,18 +205,54 @@
           <li><span>-</span>Автотрейдинг</li>
           <li><span>-</span>ЖелДорЭкспедиция</li>
         </ol>
-        <button>подробнее о компании</button>
+        <button class="btn">подробнее о компании</button>
       </div>
-      <div class="contacts">
+      <div class="contacts col4">
         <h3>контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="" alt="map">
-        <button>заблудились? напишите нам!</button>
+        <img src="img/map.png" alt="map">
+        <button class="btn">заблудились? напишите нам!</button>
       </div>
-      <nav>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-left">
 
-      </nav>
-      <div class="">
+        <div id="logo-bottom" class="logo">
+          техномарт
+        </div>
+        <address>
+           г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8
+           <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+        </address>
+        <div >
+          <p>&copy 2010-2017 Компания "Техномарт"</p>
+          <p>все права защищены</p>
+        </div>
+        </div>
+
+        <nav>
+          <ul class="nav1-fotter">
+            <li class=''>компания</li>
+            <li class=''>новости</li>
+            <li class=''>каталог</li>
+            <li class=''>доставка</li>
+            <li class=''>контакты</li>
+          </ul>
+          <ul class="nav2-fotter">
+            <li class=''>материалы</li>
+            <li class=''>техника</li>
+            <li class=''>инструмент</li>
+            <li class=''>спецпредложения</li>
+          </ul>
+          <div>
+            <img src="img/btn_vk.png" alt="">
+            <img src="img/btn_fb.png" alt="">
+            <img src="img/btn_inst.png" alt="">
+            <p>Обратная связь:<a href="mailto:vlad@htmlbook.ru">mail@htmlacadamy.ru</a></p>
+            <p>Разработано -<a href="htmlacademy.ru">htmlacadamy.ru</a></p>
+          </div>
+        </nav>
 
       </div>
     </footer>

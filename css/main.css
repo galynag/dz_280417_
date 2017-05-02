@@ -6,14 +6,29 @@
   font-size: 16px;
 
 }
-
+nav.top2, footer, .service::after, .contacts, .pop, .pop::after, .services, .overflow-deliveri, .btns-deliveri, .btns-deliveri::after, .about-company, .service, .line-top::after, .vendors {
+  content: '';
+  clear: both;
+  display: block;
+  float: left;
+}
+nav.top li:last-child-child {
+  float: right;
+  margin-right: 0;
+}
+nav.top2 {
+  width: 940px;
+  margin-left: 10px;
+  background-color: #32425c;
+  box-shadow: #293449 0 5px;
+}
 .container {
   width: 960px;
   margin: auto;
 }
 h1 {
   color: #e9292a;
-  padding: 50px 0 0 57px;
+  padding: 50px 0 0 47px;
 }
 h1 p{
   font-family: Cuprum-Italic, sans-serif;
@@ -21,10 +36,16 @@ h1 p{
   font-weight: lighter;
 }
 h2 {
+  margin: 25px 0 0 25px;
   font-family: Cuprum-Bold, sans-serif;
   font-size: 36px;
   color: #fff;
   text-transform: uppercase;
+}
+div.sliderbox span {
+  font: 18px PTSans,Cuprum,sans-serif;
+  margin: 0 0 0 25px;
+  display: block;
 }
 h3 {
   font-size: 30px;
@@ -35,13 +56,13 @@ h4 {
   font-size: 36px;
   text-transform: uppercase;
 }
-button {
+.btn {
   border: none;
   outline: none;
   border-radius: 3px;
-}
-.col4 {
-  width: 300px;
+  background: #ee3643;
+  color: #fff;
+  text-transform: uppercase;
 }
 .col2 {
   width: 140px;
@@ -81,13 +102,10 @@ button img {
 }
 
 .top2 li{
-  background-color: #32425c;
   width: inherit;
   height: 57px;
   text-transform: capitalize;
-  padding: 23px 30px 0 30px;
-  box-shadow: #293449 0 5px;
-
+  padding: 23px 18px 0 47px;
 }
 
 @font-face {
@@ -130,16 +148,14 @@ button img {
   width: 100%;
   height: 43px;
   background-color: #293449;
-  position: relative;
+  /*position: relative;*/
 }
-
 .col4 {
   width: 300px;
 }
 .row123 {
   height: 123px;
 }
-
 .promo div {
   display: block;
   float: left;
@@ -147,7 +163,6 @@ button img {
 .col4 {
   margin: 10px;
 }
-
 .slider {
   margin: 10px;
   width: 620px;
@@ -166,7 +181,6 @@ img.iconleft-slider {
 img.iconlright-slider {
   right: 0px;
 }
-
 .sliderbox {
   margin: 0;
   display: block;
@@ -180,34 +194,31 @@ img.iconlright-slider {
   height: 266px;
 }
 .sliderbox button {
-  background: #ee3643;
   width: 196px;
   height: 40px;
-  color: #fff;
-  text-transform: uppercase;
-  float: bottom;
+  margin: 110px 0 0 25px;
 }
-#logo {
-    display: block;
-    float: left;
-    filter: brightness(10);
-    margin: 0 10px 0 0;
+#logo-top {
+  display: block;
+  float: left;
+  width: 220px;
+  height: 42px;
+  font-size: 24px;
+  padding-top: 10px;
+  margin-left: 0 10px;
     /*position: absolute;
     top: 0;
     left: 50%;
   transform: translate(-470px);*/
 }
-
 .search {
   opacity: 50%;
 }
-
 ul img {
   margin: 0 10px;
 }
-
 nav.top {
-  width: 940px;
+  width: 960px;
   margin: auto;
   color: #fff;
 
@@ -226,15 +237,14 @@ nav.top li {
   padding: 13px 10px;
 
 }
-
 nav.top li.col2:last-child {
   margin-left: 0;
   width: 150px;
   background-color: #63a63e;
   text-align: center;
 }
-
 nav.top input {
+  width: 194px;
   border: none;
   background-color: #293449;
   float: left;
@@ -245,13 +255,11 @@ nav.top input {
   float: left;
   margin: 0 10px;
 }
-
 section.promo {
   margin-top: 121px;
   float: left;
   color: #fff;
 }
-
 .promo div img {
   padding: 30px 23px 0 0;
   float: right;
@@ -273,48 +281,39 @@ section.promo {
   font-size: 14px;
   text-transform: uppercase;
 }
-
 .promo1 {
   background: #f6b22d url(../img/newflag.png) no-repeat right top;
 }
-
 .promo1 button {
   background: #dda028;
 }
-
 .promo2 {
   background: #4aafde;
 }
-
 .promo2 button {
   background: #429dc7;
 }
-
 .promo3 {
   background: #cc79d1;
 }
 .promo3 button {
   background: #b76dbc;
 }
-
 .promo4 {
   background: #85d179;
 }
 .promo4 button {
   background: #77bc6d;
 }
-
 .promo5 {
   background: #f6b22d;
 }
 .promo5 button {
   background: #dda028;
 }
-
 #slider1 {
   background: url(../img/slider1.png) no-repeat;
 }
-
 /*популярные товары*/
 .pop {
   float: left;
@@ -325,25 +324,19 @@ section.promo {
   color: #32425c;
   text-transform: uppercase;
 }
-
 .pop span {
   display: block;
   float: left;
  font-size: 30px;
  margin: 23px;
 }
-
 .pop button {
   margin: 23px;
   width: 254px;
   height: 38px;
   float: right;
-  background: #ee3643;
-  color: #fff;
   font-size: 14px;
-  text-transform: uppercase;
 }
-
 .item {
   margin: 10px;
   width: 220px;
@@ -365,7 +358,6 @@ section.promo {
 .item span {
   text-transform: uppercase;
 }
-
 .old-price {
   color: #999999;
   text-decoration: line-through;
@@ -413,12 +405,6 @@ section.promo {
 .row143 {
   height: 143px;
 }
-.pop, .pop::after, .services, .btns-deliveri, .about-company, .contacts, .service, .line-top::after, .vendors, .deliveri {
-  content: '';
-  clear: both;
-  display: block;
-  float: left;
-}
 .service {
   width: 100%;
   height: 520px;
@@ -429,47 +415,137 @@ section.promo {
   height: 228px;
   padding: 65px 0 0 10px;
 }
-.services p {
+.services p, .deliveri p, .about-company p, .contacts p {
   font: 13px PTSans,sans-serif;
   line-height: 25px;
 }
 .services h3 {
  padding-bottom: 30px;
 }
-
-.btns-deliveri{
+.overflow-deliveri {
+  /*overflow: hidden;*/
   width: 240px;
-  height: 360px;
+  height: 236px;
 }
-.btns-deliveri div {
-  float: left;
+.btns-deliveri{
+  width: 250px;
+  height: 244px;
+  padding: 40px 0 0 10px;
+   box-shadow: -23px 0px 21px -24px #969696 inset;
+}
+.btns-deliveri button {
   padding: 20px;
   width: 240px;
   height: 60px;
+  border-radius: 0;
+  box-shadow: -23px 2px 21px -24px #969696 inset;
+  text-align: left;
+  border: none;
+  outline: none;
 }
-.btns-deliveri div.white {
+.btns-deliveri button.white {
   background: #fff;
   color: #32425c;
   font: 21px Cuprum-Bold,sans-serif;
   text-transform: capitalize;
 }
-.btns-deliveri div.dark {
+.btns-deliveri button.dark {
   background: #32425c;
   color: #fff;
   font: 21px Cuprum-Bold,sans-serif;
   text-transform: capitalize;
+  border-top: 1px solid #293449;
+
 }
 .service .container {
-  height: 253px;
+
+  height: 521px;
   background:  url(../img/truck.png) no-repeat right bottom;
 }
-.contacts img {
+.deliveri {
+  width: 360px;
+  height: 260px;
+  float: left;
+  padding: 40px 0 0 80px;
+}
+.col8 {
+  width: 600px;
+  margin: 10px;
+}
+.about-company button {
+  width: 220px;
+  height: 40px;
+  font-size: 14px;
+  margin: 0px;
+}
+.contacts button {
+  width: 300px;
+  height: 40px;
+  font-size: 14px;
+  margin: 0;
+}
+.company-contacts {
+  width: 960px;
+  width: 540px;
+}
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: #b52933 0 5px;
+  background: #ee3643;
+  text-align: center;
+}
+#logo-bottom {
+  width: 220px;
+  height: 64px;
+  font-size: 24px;
+  padding-top: 22px;
+}
+footer {
+  width: 100vh;
+  height: 194px;
+  background: #32425c;
+  box-shadow: #293449 0 107px;
+  color: #fff;
+}
+.footer-left {
+  width: 380px;
+  height: 301px;
+}
+footer address, footer a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 60px;
+}
+footer nav, .footer-left, footer li, footer img, footer p {
   display: block;
   float: left;
 }
-.deliveri {
-  float: right;
-  width: 700px;
-  height: 322px;
-  box-shadow: 10px 0 10px 5px #d2d2d2 inset;
+footer li {
+  margin: 43px 0 30px 0;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+footer nav ul.nav1-fotter li {
+  color: #fff;
+  padding-right: 30px;
+}
+footer nav ul.nav2-fotter li {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  color: #ffd180;
+  padding-left: 30px;
+}
+footer img {
+  margin: 0 2.5px 0 2.5px;
+}
+footer p {
+  margin: 0 0 0 50px;
+  font-size: 16px;
+}
+footer a {
+  color: #ffd180;
+  font-size: 16px;
 }
