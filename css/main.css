@@ -56,14 +56,7 @@ h4 {
   font-size: 36px;
   text-transform: uppercase;
 }
-.btn {
-  border: none;
-  outline: none;
-  border-radius: 3px;
-  background: #ee3643;
-  color: #fff;
-  text-transform: uppercase;
-}
+
 .col2 {
   width: 140px;
 }
@@ -96,7 +89,12 @@ button.header {
   border: none;
   background: none;
 }
-
+button.header:hover {
+color: #ee3643;
+}
+button.header:active {
+color: #dbdbdb;
+}
 button img {
   margin: 0 20px;
 }
@@ -107,7 +105,12 @@ button img {
   text-transform: capitalize;
   padding: 23px 18px 0 47px;
 }
-
+.top2 li:hover {
+  background: #1d2739;
+}
+.top2 li:active {
+  opacity: 0.3;
+}
 @font-face {
   font-family: 'Cuprum';
   src: url(../fonts/web/cuprum.woff2) format('woff2'), url(../fonts/web/cuprum.woff) format('woff'), url(../fonts/Cuprum/Cuprum-Regular.ttf) format('truetype');
@@ -116,7 +119,7 @@ button img {
 }
 @font-face {
   font-family: 'Cuprum-Bold';
-  src: url(../fonts/cuprumbold.woff2) format('woff2'), url(../fonts/cuprumbold.woff) format('woff'), url(../fonts/Cuprum/Cuprum-Bold.ttf) format('truetype');
+  src: url(../fonts/web/cuprumbold.woff2) format('woff2'), url(../fonts/web/cuprumbold.woff) format('woff'), url(../fonts/Cuprum/Cuprum-Bold.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -128,7 +131,7 @@ button img {
 }
 @font-face {
   font-family: 'Cuprum-BoldItalic';
-  src: url(../fonts/cuprum-regular-webfont.woff2) format('woff2'), url(../fonts/cuprum-regular-webfont.woff) format('woff'), url(../fonts/Cuprum/Cuprum-Bold.ttf) format('truetype');
+  src: url(../fonts/web/cuprumbolditalic.woff2) format('woff2'), url(../fonts/web/cuprumbolditalic.woff) format('woff'), url(../fonts/Cuprum/Cuprum-Bold.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -243,21 +246,38 @@ li {
 nav.top li {
   margin: 0;
   padding: 13px 10px;
+}
+nav.top li:hover {
 
 }
+
 nav.top li.col2:last-child {
   margin-left: 0;
   width: 150px;
   background-color: #63a63e;
   text-align: center;
 }
+nav.top li.col2:last-child:hover {
+  background-color: #5fbb2d;
+}
+nav.top li:active {
+  opacity: 0.7;
+}
 nav.top input {
-  width: 184px;
+  width:  183px;
   border: none;
   background-color: #293449;
   float: left;
   margin: 12px 10px;
 }
+top2.li:hover {
+  background: #293449;
+}
+top2.li:active {
+  background: #1d2739;
+  color: #a6a8ad;
+}
+
 .header {
   display: block;
   float: left;
@@ -292,32 +312,28 @@ section.promo {
 .promo1 {
   background: #f6b22d url(../img/newflag.png) no-repeat right top;
 }
-.promo1 button {
-  background: #dda028;
+.promo button {
+  background: rgba(153, 153, 153, 0.5);
+}
+.promo button:hover {
+  background: rgba(153, 153, 153, 0.8);
+  outline: none;
+}
+.promo button:active {
+  background: #b2b2b2;
+  outline: none;
 }
 .promo2 {
   background: #4aafde;
 }
-.promo2 button {
-  background: #429dc7;
-}
 .promo3 {
   background: #cc79d1;
-}
-.promo3 button {
-  background: #b76dbc;
 }
 .promo4 {
   background: #85d179;
 }
-.promo4 button {
-  background: #77bc6d;
-}
 .promo5 {
   background: #f6b22d;
-}
-.promo5 button {
-  background: #dda028;
 }
 #slider1 {
   background: url(../img/slider1.png) no-repeat;
@@ -534,6 +550,14 @@ section.promo {
   background: #ee3643;
   text-align: center;
 }
+.logo:hover {
+  box-shadow: #9a212a 0 5px;
+  background: #ca2c37;
+}
+.logo:active {
+  box-shadow: #8e1e26 0 5px;
+  background: #ba2732;
+}
 
 #logo-bottom {
   width: 220px;
@@ -603,4 +627,60 @@ footer nav div {
 footer nav div p {
   margin: 80px 1px 0 72px;
   width: 98px;
+}
+button.btn:hover {
+  background: #ca2c37;
+}
+button.btn:active {
+  background: #ba2732;
+}
+button.btn {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: #ee3643;
+  color: #fff;
+  text-transform: uppercase;
+}
+.hidden button {
+  width: 135px;
+  height: 37px;
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+  margin: 10px;
+}
+button.green {
+  color: #fff;
+  width: 135px;
+  height: 37px;
+  background: #63a63e;
+  box-shadow: #367315 0 2px;
+}
+button.green:hover {
+  background: #5fbb2d;
+  box-shadow: #367315 0 2px;
+}
+button.green:active {
+  background: #518534;
+}
+button.green-border {
+  background: #fff;
+ border: 4px solid #63a63e;
+}
+button.green-border:hover {
+  border: 4px solid #32425c;
+}
+button.green-border:active {
+  border: 4px solid #c1c6ce;
+  color: #c1c6ce;
+}
+.show {
+visibility: hidden;
+display: none;
+}
+.hidden {
+  width: 184px;
+  height: 164px;
+  padding: 31px;
 }
